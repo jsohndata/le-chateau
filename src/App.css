@@ -1,38 +1,128 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: inherit; }
+html { scroll-behavior: smooth; }
+
+* { font-family: 'Sono', sans-serif; }
+
+body { 
+  background-color: #15130b;
+}
+
+header {
+  background-color: #060914dc;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 1999;
+  padding: 15px;
+}
+
+header > *:first-child {
+  flex-grow: 5
+}
+
+header > *:nth-child(2) {
+  flex-grow: 5;
+}
+
+header > h1,
+header > p { 
+  color: #e7e5e3; }
+
+header > h1 { 
+  font-size: calc(19px + 0.5vw);
+  font-weight: 300;
+
+}
+
+nav > button {
+  background: linear-gradient(0deg, #4b6cb7 0%, #182848 100%);  z-index: 999;
+  border: none;
+  color: white;
+  padding: 5px 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transform: scale(1.0);
+  transition:  transform 0.23s ease-in-out;
+}
+
+
+nav > button:hover {
+  transform: scale(1.13);
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+  z-index: 999;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section > article {
+  flex: 1 0 200px;
+  padding: 20px;
+  margin: 10px;
+  transform: scale(1.0);
+  transition:  transform 2.23s ease-in-out;
+}
+
+section > article:hover {
+  width: 100%;
+  transform: scale(1.5);
+  filter: contrast(1.2) drop-shadow(0 0 20px rgb(132, 128, 128));
+  transition: 1.6s;
+  z-index: 999;
+}
+
+section > article > h2 {
+  font-size: calc(15px + 0.1vw);
+  font-weight: 400;
+  color: #7f632a;
+  text-align: center;  
+}
+
+section > article > p {
+  font-size: calc(13px + 0.1vw);
+  color: #f4f5f6e1;
+  font-weight: 300;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section > article > img { 
+  height: 25vh;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+  margin-top: 2.0em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer img {
+  width: 40px;
+  display: block;
+  aspect-ratio: 1/1;
+  filter:invert(1);
+  margin: 0 auto;
+  border: 0;
+  margin-bottom: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+footer > p {
+  width: 200px;
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer > p a:link,
+footer > p a:visited {
+  color: #f4f5f6e1;
+  text-decoration: none;
 }
