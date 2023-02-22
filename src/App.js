@@ -1,6 +1,6 @@
-import Listing from './components/List';
-import Footer from './components/Footer';
-import './App.css';
+import Listing from './components/List.js';
+import Footer from './components/Footer.js';
+import './assets/App.css';
 
 function App() {
   return (
