@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/le-chateau/static/css/main.cf5cc3ce.css",
+    "main.js": "/le-chateau/static/js/main.aa8a464d.js",
+    "index.html": "/le-chateau/index.html",
+    "main.cf5cc3ce.css.map": "/le-chateau/static/css/main.cf5cc3ce.css.map",
+    "main.aa8a464d.js.map": "/le-chateau/static/js/main.aa8a464d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf5cc3ce.css",
+    "static/js/main.aa8a464d.js"
+  ]
+}
