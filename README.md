@@ -3,5 +3,5 @@
 
 Creating a wine listing for Le Château jsohnData. A React project using Fetch API.
 
-## Links
+## Link(s)
 * [👉 jsohndata.github.io/le-chateau](https://jsohndata.github.io/le-chateau)
